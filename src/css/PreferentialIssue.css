@@ -1,0 +1,28 @@
+.preferentialIssuePart1 {
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size: cover;
+    min-height: 250px;
+    color: white;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+}
+
+.preferentialIssuePart2 {
+    text-align: left;
+}
+
+.investorRelationLink {
+    font-size: 15px;
+}
+
+.investorRelationLink:hover {
+    background-color: #F7C427;
+}
+
+.investorRelationLinkActive {
+    background-color: #F7C427;
+}

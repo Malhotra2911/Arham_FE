@@ -1,0 +1,638 @@
+/* ─────────────────────────────
+   Mobile phones (≤ 575 px wide)
+   ───────────────────────────── */
+@media (max-width: 575.98px) {
+  .home {
+    margin-top: 8vh;
+  }
+}
+
+/* ─────────────────────────────
+   Very small devices (≤ 375 px)
+   ───────────────────────────── */
+@media (max-width: 375px) {
+  .home {
+    margin-top: 8vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .home {
+    margin-top: 7vh;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 0; /* Push to left edge */
+}
+
+.carousel-control-next {
+  right: 0; /* Push to right edge */
+}
+
+.certificate {
+  height: 120px;
+  width: auto;
+}
+
+.centered-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure full height if needed */
+}
+
+.logoAB {
+  /* margin-top: 20%; */
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1439px) {
+  .certificate {
+    height: 80px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .certificate {
+    height: 60px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .certificate {
+    height: 50px;
+    width: auto;
+  }
+
+  .logoAB {
+    /* margin-top: 8%; */
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .certificate {
+    height: 40px;
+    width: auto;
+  }
+
+  .logoAB {
+    /* margin-top: 10%; */
+    margin-top: 12%;
+  }
+}
+/* For New Design */
+@media screen and (max-width: 374px) {
+  .logoAB {
+    margin-top: 20%;
+  }
+}
+/* For New Design */
+
+.videoSection {
+  padding: 40px;
+}
+
+.homeVideo {
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .homeVideo {
+    height: 300px;
+  }
+}
+
+.slider-overlay {
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  width: 45%; /* Adjust width as needed */
+  /* width: 600px; Adjust width as needed */
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider-overlay {
+    /* width: 450px; */
+    /* right: 35px; */
+    /* bottom: 40px; */
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .slider-overlay {
+    /* width: 320px; */
+    /* right: 25px; */
+    /* bottom: 35px; */
+    bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider-overlay {
+    /* width: 350px; */
+    width: 90%;
+    /* right: 25px; */
+    /* bottom: 40px; */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slider-overlay {
+    /* width: 320px; */
+    width: 90%;
+    /* right: 25px; */
+    /* bottom: 40px; */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slider-overlay {
+    /* width: 270px; */
+    width: 90%;
+    /* right: 25px; */
+    /* bottom: 25px; */
+  }
+}
+
+.no-padding-mobile {
+  padding: 24px;
+}
+
+.section2_2 {
+  margin-top: 50px;
+}
+
+@media screen and (max-width : 767px) {
+  .no-padding-mobile {
+    padding: 0;
+  }
+  .section2_2 {
+    margin-top: 0;
+  }
+}
+
+.slider-item {
+  white-space: nowrap;
+}
+
+.dot {
+  padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-item {
+    font-size: 0.7rem;
+  }
+
+  .dot {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .slider-item {
+    font-size: 0.6rem;
+  }
+
+  .dot {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .slider-item {
+    font-size: 0.5rem;
+  }
+
+  .dot {
+    font-size: 0.5rem;
+  }
+}
+
+.homeCTA1 {
+  bottom: 10%;
+  left: 5%;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.homeCTA2 {
+  bottom: 10%;
+  left: 5%;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+
+  .homeCTA1 {
+    bottom: 50%;
+  }
+
+  .homeCTA2 {
+    left: 10%;
+    bottom: 20%;
+  }
+}
+
+.logoStarshine {
+  height: 15px;
+  width: auto;
+  display: block;
+}
+
+.shopNowFontSize {
+  font-size: x-large;
+}
+
+@media screen and (max-width: 1023px) {
+  .shopNowFontSize {
+    font-size: medium;
+  }
+  .logoStarshine {
+    height: 10px;
+  }
+}
+
+.homeCTA2button {
+  background-color: #5e8595;
+}
+
+.homeCTA2button:hover {
+  background-color: #5e8595;
+  color: whitesmoke;
+}
+
+.homeCTA4button {
+  background-color: #e2e1df;
+}
+
+.homeCTA4button:hover {
+  background-color: #e2e1df;
+  color: black;
+}
+
+@media screen and (min-width: 769px) {
+  .headingFontSize {
+    font-size: xx-large;
+  }
+}
+
+.categoryImage1 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/television.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/ceilingFan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage3 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/cooler.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage4 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/washingMachine.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage5 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/mixerGrinder.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage6 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pedestalFan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage7 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/tabletopFan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage8 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/exhaustFan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.categoryImage9 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/multiPurposeFan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  color: white;
+  @media screen and (max-width: 768px) {
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+
+.categoryHover:hover {
+  transform: scale(1.05);
+}
+
+.categoryMargin {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.explore {
+  margin-top: 70%;
+  margin-left: 5%;
+}
+
+.section2Box {
+  background-color: #f4f4f4;
+}
+
+.section2HeadingL img {
+  width: 60%;
+}
+
+.section2TextL {
+  margin-top: 5%;
+}
+
+
+
+
+
+.enhanced-list {
+  background: linear-gradient(135deg, #f1f1f1, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.features-list li:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+.feature-text strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.feature-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
+
+
+.section2ButtonL {
+  margin-top: 5%;
+}
+
+.section2ButtonL .s2bl {
+  min-width: 400px;
+}
+
+@media screen and (max-width: 1023px) {
+  .section2ButtonL .s2bl {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .categoryImage1 {
+    min-height: 180px;
+  }
+  .categoryImage2 {
+    min-height: 180px;
+  }
+  .categoryImage3 {
+    min-height: 180px;
+  }
+  .categoryImage4 {
+    min-height: 180px;
+  }
+  .categoryImage5 {
+    min-height: 180px;
+  }
+  .categoryImage6 {
+    min-height: 180px;
+  }
+  .categoryImage7 {
+    min-height: 180px;
+  }
+  .categoryImage8 {
+    min-height: 180px;
+  }
+  .categoryImage9 {
+    min-height: 180px;
+  }
+}
+
+.pointerBox1Img {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer1de.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer1me.jpg');
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.pointerBox2Img {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer2d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer2m.jpg');
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.pointerBox3Img {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer3d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer3m.jpg');
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.pointerBox4Img {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer4d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('../assets/pointer4m.jpg');
+      background-position: center;
+      background-attachment: scroll;
+      min-height: auto;
+  }
+}
+.pointerBoxText {
+  font-size: x-large;
+}
+@media screen and (max-width: 768px) {
+  .pointerBoxText {
+    font-size: medium;
+  }
+}
+.pointerBoxHover:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1023px) {
+  .pointerBox1Img {
+    min-height: 200px;
+  }
+  .pointerBox2Img {
+    min-height: 200px;
+  }
+  .pointerBox3Img {
+    min-height: 200px;
+  }
+  .pointerBox4Img {
+    min-height: 200px;
+  }
+}

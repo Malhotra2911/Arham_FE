@@ -1,0 +1,66 @@
+.annualReportPart1 {
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size: cover;
+    min-height: 250px;
+    color: white;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+}
+
+.annualReportPart1 h1 {
+    margin-left: 140px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.annualReportPart2 {
+    text-align: left;
+}
+
+.annualReportPart2_1 {
+    background-color: lightgray;
+    border-radius: 5px;
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.investorRelationLink {
+    font-size: 15px;
+}
+
+.investorRelationLink:hover {
+    background-color: #F7C427;
+}
+
+.investorRelationLinkActive {
+    background-color: #F7C427;
+}
+
+.tableHeader {
+    background-color: #77221A !important;
+    color: white !important;
+}
+
+.scrollableContent {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 15px;
+}
+
+.content {
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        height: auto;
+    }
+}

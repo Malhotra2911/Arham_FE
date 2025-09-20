@@ -1,0 +1,44 @@
+.eWastePart1 {
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size: cover;
+    min-height: 250px;
+    color: white;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+}
+
+.eWastePart1 h1 {
+    margin-left: 140px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.eWastePart3 {
+    background-color: #f8f8f8;
+}
+
+.eWastePart3text {
+    text-align: left;
+}
+
+.eWastePart4text {
+    text-align: left;
+}
+
+.eWastePart5 {
+    background-color: #f8f8f8;
+}
+
+.eWastePart5text {
+    text-align: left;
+}
+
+.eWasteTableHeader {
+    background-color: #f1f1f1 !important;
+    color: black !important;
+}

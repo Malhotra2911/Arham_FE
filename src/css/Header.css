@@ -1,0 +1,125 @@
+/* ─────────────────────────────
+   Base styles (all screens)
+   ───────────────────────────── */
+.logo {
+  display: block;              /* avoids tiny gap below the image */
+  height: 48px;                /* desktop/tablet height */
+  width: auto;                 /* preserves aspect‑ratio */
+  max-width: 160px;            /* prevents huge images */
+  object-fit: contain;         /* trims any overflowing whitespace */
+  transition: height .2s ease; /* smooth resize when viewport changes */
+}
+
+.navbar-brand {
+  padding-top: 0;              
+  padding-bottom: 0;
+}
+
+/* Change background color on hover and active */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item.active {
+  background-color: #F7C427 !important;
+  color: black !important; /* Optional: ensure readable text */
+}
+
+.starshine-logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Logo */
+.starshineLogo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* Button positioned relative to logo */
+.shop-now-btn {
+  position: absolute;
+  bottom: -25px; /* pushes it slightly below the logo */
+  right: 0;
+  background-color: #ffcc00;
+  color: black;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+  .shop-now-btn {
+    right: 500px;
+    bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shop-now-btn {
+    right: 130px;
+    bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .shop-now-btn {
+    right: 80px;
+    bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .shop-now-btn {
+    right: 30px;
+    bottom: -20px;
+  }
+}
+
+
+.shop-now-btn:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* ─────────────────────────────
+   Mobile phones (≤ 575 px wide)
+   ───────────────────────────── */
+@media (max-width: 575.98px) {
+  .logo {
+    height: 32px;              /* smaller but still legible */
+    max-width: 120px;
+  }
+
+  /* Optional: shrink navbar toggler icon so it aligns nicely */
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ─────────────────────────────
+   Very small devices (≤ 375 px)
+   ───────────────────────────── */
+@media (max-width: 375px) {
+  .logo {
+    height: 28px;
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .nav-item {
+    font-size: 12px;
+  }
+  .starshineLogo {
+    height: 15px;
+    width: auto;
+    display: block;
+  }
+  .shop-now-btn {
+    font-size: 0.65rem;
+  }
+}

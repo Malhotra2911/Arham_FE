@@ -1,0 +1,57 @@
+.footerIcon {
+    font-size: 1.3rem;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.bi-facebook:hover {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.bi-instagram:hover {
+  color: #e1306c; /* Instagram Pink */
+}
+
+.bi-linkedin:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.bi-youtube:hover {
+  color: #ff0000; /* YouTube Red */
+}
+
+.bi-twitter:hover {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.footerText {
+    font-size: 0.9rem;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
