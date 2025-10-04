@@ -11,6 +11,16 @@ const PreferentialIssue = () => {
       image: pdf,
       name: "PCS Compliance Certificate"
     },
+    {
+      link: "/assets/preferentialIssue/Revised PCS Compliance Certificate.pdf",
+      image: pdf,
+      name: "Revised PCS Compliance Certificate"
+    },
+    {
+      link: "/assets/preferentialIssue/Revised PCS Pricing Certificate.pdf",
+      image: pdf,
+      name: "Revised PCS Pricing Certificate"
+    },
   ]
 
   const valuationReportData = [
@@ -18,6 +28,11 @@ const PreferentialIssue = () => {
       link: "/assets/preferentialIssue/Valuation_Report.pdf",
       image: pdf,
       name: "Valuation Report"
+    },
+    {
+      link: "/assets/preferentialIssue/Revised Valuation Report.pdf",
+      image: pdf,
+      name: "Revised Valuation Report"
     },
   ]
 
@@ -95,7 +110,7 @@ const PreferentialIssue = () => {
                 {/* <button className="btn btn-outline-danger" type="submit">Search</button> */}
                 </form>
             </div>
-            <h2 className='mt-2 p-1'><strong>PCS Compliance Certificate</strong></h2>
+            <h2 className='mt-2 p-1'><strong>PCS Certificate</strong></h2>
             <div className='row mt-4 p-1'>
               {filtered(PCSComplianceCertificateData).map((data, index) => {
                 return (
