@@ -506,10 +506,10 @@ const Home = () => {
         </div>
 
         <div className='container videoSection' ref={videoRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <iframe className='homeVideo'  id='yt-player' src="https://www.youtube.com/embed/3YoJMTlLtns?si=yQB9NgCGJgQuqMnN&enablejsapi=1&rel=0&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe className='homeVideo'  id='yt-player' src="https://www.youtube.com/embed/_j4rYtz3-qo?si=zvmBD0RsZP7EFMfQ&enablejsapi=1&rel=0&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
     </div>
-    
+
   )
 }
 
