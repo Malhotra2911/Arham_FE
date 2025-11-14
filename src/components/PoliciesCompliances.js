@@ -31,6 +31,11 @@ const PoliciesCompliances = () => {
       image: pdf,
       name: "Familiarization program for independent directors"
     },
+    {
+      link: "/assets/policiesCompliances/policies/RPT_Policy.pdf",
+      image: pdf,
+      name: "RPT Policy"
+    },
   ]
 
   const complianceDec2024 = [
