@@ -53,6 +53,8 @@ const Header = () => {
                 <li><Link className="dropdown-item" to="/nominationForm" onClick={closeNavbar}><strong>Nomination Form</strong></Link></li>
                 <li><Link className="dropdown-item" to="/prospectus" onClick={closeNavbar}><strong>Prospectus</strong></Link></li>
                 <li><Link className="dropdown-item" to="/preferentialIssue" onClick={closeNavbar}><strong>Preferential Issue</strong></Link></li>
+                <li><Link className="dropdown-item" to="/pressRelease" onClick={closeNavbar}><strong>Press Release</strong></Link></li>
+                <li><Link className="dropdown-item" to="/investorPresentation" onClick={closeNavbar}><strong>Investor Presentation</strong></Link></li>
                 <li><Link className="dropdown-item" to="/contact" onClick={closeNavbar}><strong>Contact Information</strong></Link></li>
               </ul>
             </li>

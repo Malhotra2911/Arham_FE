@@ -762,6 +762,12 @@ const CorporateAnnouncements = () => {
               <Link to="/preferentialIssue" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Preferential Issue</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
+                <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+                <Link to="/investorPresentation" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Investor Presentation</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
               <Link to="/contact" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Contact Information</i></Link>
             </div>
           </div>
