@@ -44,7 +44,7 @@ const PressRelease = () => {
             <div className='investorRelationLink mb-3'>
               <Link to="/annualReport" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Annual Report</i></Link>
             </div>
-            <div className='investorRelationLink investorRelationLinkActive mb-3'>
+            <div className='investorRelationLink mb-3'>
               <Link to="/shareholderInformation" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Shareholder's Information</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
@@ -69,6 +69,12 @@ const PressRelease = () => {
               <Link to="/preferentialIssue" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Preferential Issue</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
+              <Link to="/financials" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Financials</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+              <Link to="/shareWarrants" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Share Warrants</i></Link>
+            </div>
+            <div className='investorRelationLink investorRelationLinkActive mb-3'>
                 <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>

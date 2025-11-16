@@ -5,43 +5,12 @@ import pdf from '../assets/pdf.png'
 
 const PreferentialIssue = () => {
 
-  const PCSComplianceCertificateData = [
+  const equitySharesData = [
     {
-      link: "/assets/preferentialIssue/PCS_Certificate.pdf",
+      link: "/assets/preferentialIssue/CS Certificate_Pref Issue_Signed.pdf",
       image: pdf,
-      name: "PCS Compliance Certificate"
-    },
-    {
-      link: "/assets/preferentialIssue/Revised PCS Compliance Certificate.pdf",
-      image: pdf,
-      name: "Revised PCS Compliance Certificate"
-    },
-    {
-      link: "/assets/preferentialIssue/Revised PCS Pricing Certificate.pdf",
-      image: pdf,
-      name: "Revised PCS Pricing Certificate"
-    },
-  ]
-
-  const valuationReportData = [
-    {
-      link: "/assets/preferentialIssue/Valuation_Report.pdf",
-      image: pdf,
-      name: "Valuation Report"
-    },
-    {
-      link: "/assets/preferentialIssue/Revised Valuation Report.pdf",
-      image: pdf,
-      name: "Revised Valuation Report"
-    },
-  ]
-
-  const corrigendumAuraData = [
-    {
-      link: "/assets/preferentialIssue/Corrigendum_Notice.pdf",
-      image: pdf,
-      name: "Corrigendum Notice"
-    },
+      name: "CS Certificate Preferential Issue Signed"
+    }
   ]
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -63,7 +32,7 @@ const PreferentialIssue = () => {
 
       <section className='container preferentialIssuePart2'>
         <div className='row mx-2 my-4 content'>
-          <div className='col-md-12 col-lg-4 policiesCompliancePart2_1 p-3 d-none d-md-block'>
+          <div className='col-md-12 col-lg-4 preferentialIssuePart2_1 p-3 d-none d-md-block'>
             <h3 className='pb-3'>Investor Relation</h3>
             <div className='investorRelationLink mb-3'>
               <Link to="/boardOfDirector" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Board Of Directors</i></Link>
@@ -99,6 +68,12 @@ const PreferentialIssue = () => {
               <Link to="/preferentialIssue" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Preferential Issue</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
+              <Link to="/financials" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Financials</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+              <Link to="/shareWarrants" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Share Warrants</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
                 <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
@@ -116,43 +91,9 @@ const PreferentialIssue = () => {
                 {/* <button className="btn btn-outline-danger" type="submit">Search</button> */}
                 </form>
             </div>
-            <h2 className='mt-2 p-1'><strong>PCS Certificate</strong></h2>
+            <h2 className='mt-2 p-1'><strong>Equity Shares</strong></h2>
             <div className='row mt-4 p-1'>
-              {filtered(PCSComplianceCertificateData).map((data, index) => {
-                return (
-                  <div className='col-6 col-md-4 p-4' key={index}>
-                    <Link to={data.link} target='_blank' style={{ textDecoration: 'none' }}>
-                    <div className="card">
-                      <img src={data.image} className="card-img-top mx-auto d-block p-1" alt="..." style={{ height: '120px', width: '120px' }} />
-                      <div className="card-body">
-                        <h6 className="card-text">{data.name}</h6>
-                      </div>
-                    </div>
-                    </Link>
-                  </div>
-                )
-              })}
-            </div>
-            <h2 className='mt-2 p-1'><strong>Valuation Report</strong></h2>
-            <div className='row mt-4 p-1'>
-              {filtered(valuationReportData).map((data, index) => {
-                return (
-                  <div className='col-6 col-md-4 p-4' key={index}>
-                    <Link to={data.link} target='_blank' style={{ textDecoration: 'none' }}>
-                    <div className="card">
-                      <img src={data.image} className="card-img-top mx-auto d-block p-1" alt="..." style={{ height: '120px', width: '120px' }} />
-                      <div className="card-body">
-                        <h6 className="card-text">{data.name}</h6>
-                      </div>
-                    </div>
-                    </Link>
-                  </div>
-                )
-              })}
-            </div>
-            <h2 className='mt-2 p-1'><strong>Corrigendum to Notice</strong></h2>
-            <div className='row mt-4 p-1'>
-              {filtered(corrigendumAuraData).map((data, index) => {
+              {filtered(equitySharesData).map((data, index) => {
                 return (
                   <div className='col-6 col-md-4 p-4' key={index}>
                     <Link to={data.link} target='_blank' style={{ textDecoration: 'none' }}>

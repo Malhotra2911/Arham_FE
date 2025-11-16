@@ -1,4 +1,4 @@
-.preferentialIssuePart1 {
+.shareWarrantsPart1 {
     padding: 20px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     background-size: cover;
@@ -11,18 +11,18 @@
     }
 }
 
-.preferentialIssuePart1 h1 {
+.shareWarrantsPart1 h1 {
     margin-left: 140px;
     @media screen and (max-width: 768px) {
         margin-left: 0;
     }
 }
 
-.preferentialIssuePart2 {
+.shareWarrantsPart2 {
     text-align: left;
 }
 
-.preferentialIssuePart2_1 {
+.shareWarrantsPart2_1 {
     background-color: lightgray;
     border-radius: 5px;
     max-height: 550px;

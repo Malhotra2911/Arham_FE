@@ -28,6 +28,8 @@ import PageTracker from './components/PageTracker'
 import PreferentialIssue from './components/PreferentialIssue';
 import PressRelease from './components/PressRelease';
 import InvestorPresentation from './components/InvestorPresentation';
+import Financials from './components/Financials';
+import ShareWarrants from './components/ShareWarrants';
 
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
             <Route exact path="/nominationForm" element={ <NominationForm /> }></Route>
             <Route exact path="/prospectus" element={ <Prospectus /> }></Route>
             <Route exact path="/preferentialIssue" element={ <PreferentialIssue /> }></Route>
+            <Route exact path="/financials" element={ <Financials /> }></Route>
+            <Route exact path="/shareWarrants" element={ <ShareWarrants /> }></Route>
             <Route exact path="/pressRelease" element={ <PressRelease /> } ></Route>
             <Route exact path="/investorPresentation" element={ <InvestorPresentation /> }></Route>
             <Route exact path="/ewaste" element={ <EWaste /> }></Route>

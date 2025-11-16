@@ -58,7 +58,7 @@ const BoardOfDirector = () => {
   return (
     <div>
       <section className='boardOfDirectorPart1'>
-        <h1 style={{textAlign: "left", marginTop: "20vh"}}><strong>Board Of Director</strong></h1>
+        <h1 style={{textAlign: "left", marginTop: "20vh"}}><strong>Board Of Directors</strong></h1>
       </section>
 
       <section className='container boardOfDirectorPart2'>
@@ -97,6 +97,12 @@ const BoardOfDirector = () => {
             </div>
             <div className='investorRelationLink mb-3'>
               <Link to="/preferentialIssue" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Preferential Issue</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+              <Link to="/financials" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Financials</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+              <Link to="/shareWarrants" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Share Warrants</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
                 <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>

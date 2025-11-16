@@ -1,51 +1,45 @@
-import React from 'react'
-import '../css/AnnualReport.css'
+import React, { useState } from 'react'
+import '../css/Financials.css'
 import { Link } from 'react-router-dom'
+import pdf from '../assets/pdf.png'
 
-const AnnualReport = () => {
+const Financials = () => {
 
-  const tableData = [
-    {
-      row1: "2024-2025",
-      row2: "/assets/annualReport/Annual-Report-2024-25.pdf",
-      row3: ""
-    },
-    {
-      row1: "2023-2024",
-      row2: "/assets/annualReport/Annual-Report-2023-24.pdf",
-      row3: "/assets/annualReport/Annual-Return-2023-24.pdf"
-    },
-    {
-      row1: "2022-2023",
-      row2: "/assets/annualReport/Annual-Report-2022-23.pdf",
-      row3: "/assets/annualReport/Annual-Return-2022-23.pdf"
-    },
-    {
-      row1: "2021-2022",
-      row2: "/assets/annualReport/Annual-Report-2021-22.pdf",
-      row3: "/assets/annualReport/Annual-Return-2021-22.pdf"
-    },
-    {
-      row1: "2020-2021",
-      row2: "/assets/annualReport/Annual-Report-2020-21.pdf",
-      row3: "/assets/annualReport/Annual-Return-2020-21.pdf"
-    },
-    {
-      row1: "2019-2020",
-      row2: "/assets/annualReport/Annual-Report-2019-20.pdf",
-      row3: "/assets/annualReport/Annual-Return-2019-20.pdf"
-    },
-  ]
+    const datas = [
+        {
+          name: "Arham Consolidated Audited FY 25-26-H1",
+          issue: "",
+          image: pdf,
+          link: "/assets/financials/Arham consolidated Audited FY 25-26-H1.pdf",
+        },
+        {
+          name: "Arham Standalone Audited FY25-26-H1",
+          issue: "",
+          image: pdf,
+          link: "/assets/financials/Arham Standalone Audited FY25-26-H1.pdf",
+        }
+      ]
+    
+    const [searchQuery, setSearchQuery] = useState('');
+                
+    const handleSearchChange = (e) => {
+        const value = e.target.value.toLowerCase();
+        setSearchQuery(value);
+    }
+    
+    const filtered = (dataArray) => {
+        return dataArray.filter(data => data.name.toLowerCase().includes(searchQuery));
+    }
 
   return (
     <div>
-      <section className='annualReportPart1'>
-        <h1 style={{textAlign: "left", marginTop: "20vh"}}><strong>Annual Report</strong></h1>
+      <section className='financialsPart1'>
+      <h1 style={{textAlign: "left", marginTop: "20vh"}}><strong>Financials</strong></h1>
       </section>
 
-      <section className='container annualReportPart2'>
+      <section className='container financialsPart2'>
         <div className='row mx-2 my-4 content'>
-          <div className='col-md-12 col-lg-4 annualReportPart2_1 p-3 d-none d-md-block'>
+          <div className='col-md-12 col-lg-4 financialsPart2_1 p-3 d-none d-md-block'>
             <h3 className='pb-3'>Investor Relation</h3>
             <div className='investorRelationLink mb-3'>
               <Link to="/boardOfDirector" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Board Of Directors</i></Link>
@@ -53,7 +47,7 @@ const AnnualReport = () => {
             <div className='investorRelationLink mb-3'>
               <Link to="/committeesOfTheBoard" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Committees Of The Board</i></Link>
             </div>
-            <div className='investorRelationLink investorRelationLinkActive mb-3'>
+            <div className='investorRelationLink mb-3'>
               <Link to="/annualReport" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Annual Report</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
@@ -80,14 +74,14 @@ const AnnualReport = () => {
             <div className='investorRelationLink mb-3'>
               <Link to="/preferentialIssue" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Preferential Issue</i></Link>
             </div>
-            <div className='investorRelationLink mb-3'>
-                <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>
-            </div>
-            <div className='investorRelationLink mb-3'>
+            <div className='investorRelationLink investorRelationLinkActive mb-3'>
               <Link to="/financials" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Financials</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
               <Link to="/shareWarrants" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Share Warrants</i></Link>
+            </div>
+            <div className='investorRelationLink mb-3'>
+                <Link to="/pressRelease" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Press Release</i></Link>
             </div>
             <div className='investorRelationLink mb-3'>
                 <Link to="/investorPresentation" className='text-muted p-4' style={{ textDecoration: 'none' }}><i className="bi bi-caret-right">Investor Presentation</i></Link>
@@ -97,28 +91,29 @@ const AnnualReport = () => {
             </div>
           </div>
           <div className='col-md-12 col-lg-8 scrollableContent' align='center'>
-            <h1><strong>Annual Reports</strong></h1>
-            <div>
-              <table className="table table-bordered text-center mt-4 p-4">
-                <thead>
-                  <tr>
-                    <th scope="col" className='tableHeader'>Financial Year</th>
-                    <th scope="col" className='tableHeader'>Annual Report</th>
-                    <th scope="col" className='tableHeader'>Annual Return</th>
-                  </tr>
-                </thead>
-                <tbody>
-                {tableData.map((row,index) => {
-                  return(
-                    <tr key={index}>
-                      <td>{row.row1}</td>
-                      <td>{row.row2 ? (<Link to={row.row2} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#77221A' }}>Report [{row.row1}]</Link>) : ( "-" )}</td>
-                      <td>{row.row3 ? (<Link to={row.row3} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#77221A' }}>Return [{row.row1}]</Link>) : ( "-" )}</td>
-                    </tr>
-                  )
-                })}
-                </tbody>
-              </table>
+            <h1><strong>Financials</strong></h1>
+            <div className="container-fluid p-3">
+                <form className="d-flex" role="search">
+                <input className="form-control me-2" type="search" placeholder="Search Financials" aria-label="Search" value={searchQuery} onChange={handleSearchChange} />
+                {/* <button className="btn btn-outline-danger" type="submit">Search</button> */}
+                </form>
+            </div>
+            <div className='row mt-4 p-1'>
+              {filtered(datas).map((data, index) => {
+                return(
+                  <div className='col-6 col-md-4 p-4' key={index} align='center'>
+                    <Link to={data.link} target='_blank' style={{ textDecoration: 'none' }}>
+                    <div className="card">
+                      <img src={data.image} className="card-img-top mx-auto d-block p-1" alt="..." style={{ height: '120px', width: '120px' }} />
+                      <div className="card-body">
+                        <h6 className="card-text">{data.name}</h6>
+                        {data.issue ? (<p className='post'><strong>{data.issue}</strong></p>) : ""}
+                      </div>
+                    </div>
+                    </Link>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -127,4 +122,4 @@ const AnnualReport = () => {
   )
 }
 
-export default AnnualReport
+export default Financials
