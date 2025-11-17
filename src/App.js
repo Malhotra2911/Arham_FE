@@ -30,7 +30,7 @@ import PressRelease from './components/PressRelease';
 import InvestorPresentation from './components/InvestorPresentation';
 import Financials from './components/Financials';
 import ShareWarrants from './components/ShareWarrants';
-
+import EarningsCall from './components/EarningsCall';
 
 function App() {
   return (
@@ -61,6 +61,7 @@ function App() {
             <Route exact path="/financials" element={ <Financials /> }></Route>
             <Route exact path="/shareWarrants" element={ <ShareWarrants /> }></Route>
             <Route exact path="/pressRelease" element={ <PressRelease /> } ></Route>
+            <Route exact path="/earningsCall" element={ <EarningsCall /> } ></Route>
             <Route exact path="/investorPresentation" element={ <InvestorPresentation /> }></Route>
             <Route exact path="/ewaste" element={ <EWaste /> }></Route>
             <Route exact path="/blogPage/:id" element={ <BlogPage /> }></Route>
