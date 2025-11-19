@@ -15,7 +15,7 @@ const EarningsCall = () => {
     {
       link: "/assets/earningsCall/ArhamTech-Nov17-2025.pdf",
       image: pdf,
-      name: "H1FY26 Earnings Call"
+      name: "H1FY26 Transcript"
     }
   ]
 
