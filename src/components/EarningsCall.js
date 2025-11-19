@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../css/EarningsCall.css'
 import { Link } from 'react-router-dom'
 import mp3 from '../assets/mp3.png'
+import pdf from '../assets/pdf.png'
 
 const EarningsCall = () => {
 
@@ -9,6 +10,11 @@ const EarningsCall = () => {
     {
       link: "/assets/earningsCall/10038185.mp3",
       image: mp3,
+      name: "H1FY26 Earnings Call"
+    },
+    {
+      link: "/assets/earningsCall/ArhamTech-Nov17-2025.pdf",
+      image: pdf,
       name: "H1FY26 Earnings Call"
     }
   ]
